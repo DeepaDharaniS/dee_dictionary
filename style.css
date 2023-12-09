@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ae9cff;
+}
+.container {
+    background-color: #ffffff;
+    width: 700px;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    padding: 80px 50px;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(38, 33, 61, 0.2);
+}
+.search-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.search-box input {
+    padding: 5px;
+    width: 70%;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #ae9cff;
+    font-size: 16px;
+}
+.search-box button {
+    padding: 15px 0;
+    width: 25%;
+    background-color: #ae9cff;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    border-radius: 5px;
+}
+.search-box button:hover{
+    background-color: #b3b6d4;
+}
+
+.result h3 {
+    font-size: 30px;
+    color: #1f194c;
+}
+.result .word {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.result button {
+    background-color: transparent;
+    color: #ae9cff;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+.result .details {
+    display: flex;
+    gap: 10px;
+    color: #b3b6d4;
+    margin: 5px 0 20px 0;
+    font-size: 14px;
+}
+.word-meaning {
+    color: #575a7b;
+}
+.word-example {
+    color: #575a7b;
+    font-style: italic;
+    border-left: 5px solid #ae9cff;
+    padding-left: 20px;
+    margin-top: 30px;
+}
+.error {
+    margin-top: 80px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1080px) {
+    .container {
+        width: 90%; 
+        top: 10%; 
+        left: 5%; 
+        padding: 50px; 
+    }
+
+    .search-box input {
+        width: 60%; 
+    }
+    .search-box input::placeholder{
+        font-size: 13px;
+    }
+
+    .search-box button {
+        width: 30%; 
+    }
+
+    .result {
+        margin-top: 50px; 
+    }
+
+    .result h3 {
+        font-size: 24px; 
+    }
+
+    .result .word {
+        margin-top: 50px; 
+    }
+
+    .word-example {
+        margin-top: 20px;
+    }
+}
